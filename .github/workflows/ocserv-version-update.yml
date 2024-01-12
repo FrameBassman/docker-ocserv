@@ -22,7 +22,7 @@ jobs:
       uses: peter-evans/create-pull-request@v5
       with:
         commit-message: "Bump ocserv version ${{ steps.get_version.outputs.OC_VERSION }}"
-        token: ${{ secrets.PAT }}
+        token: ${{ github.token }}
         branch: features/update-dependencies
         title: Bump ocserv version
         labels: dependencies
