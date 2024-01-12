@@ -7,10 +7,10 @@ jobs:
   updates:
     runs-on: ubuntu-latest
     permissions:
-      # id-token: write
+      id-token: write
       # contents: write
       # packages: write
-      pull-requests: write
+      # pull-requests: write
     steps:
     - name: Checkout
       uses: actions/checkout@v3
